@@ -1,0 +1,6 @@
+[submodule "packages/cli"]
+	path = packages/cli
+	url = https://github.com/pedrojaques99/visantchi-cli.git
+[submodule "packages/social"]
+	path = packages/social
+	url = https://github.com/pedrojaques99/visantchi-social.git

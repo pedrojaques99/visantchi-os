@@ -1,0 +1,21 @@
+{
+  "name": "visantchi-os",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Visantchi OS — cockpit root for CLI + Social",
+  "scripts": {
+    "dev:cli": "npm run dev --prefix packages/cli/visantchi",
+    "dev:social": "npm run dev --prefix packages/social",
+    "dev": "concurrently \"npm run dev:cli\" \"npm run dev:social\"",
+    "build:cli": "npm run build --prefix packages/cli/visantchi",
+    "build:social": "npm run build --prefix packages/social",
+    "build": "npm run build:cli && npm run build:social",
+    "test:cli": "npm run test --prefix packages/cli/visantchi",
+    "test:social": "npm run test --prefix packages/social",
+    "test": "npm run test:cli && npm run test:social",
+    "update": "git submodule update --remote --merge"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.0"
+  }
+}
