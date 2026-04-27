@@ -1,13 +1,39 @@
 {
   "permissions": {
     "allow": [
-      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\(d.get\\('name'\\), d.get\\('description',''\\)\\)\")",
-      "Bash(git init *)",
-      "Bash(git submodule *)",
-      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\(json.dumps\\(d.get\\('scripts',{}\\), indent=2\\)\\)\")",
+      "Bash(git -C Z:\\\\Cursor\\\\visantchi-os status --short)",
+      "Bash(git checkout *)",
       "Bash(npm install *)",
-      "Bash(git add *)",
-      "Bash(git commit *)"
+      "Bash(npm run *)",
+      "Bash(npm --version)",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\(json.dumps\\(d.get\\('scripts',{}\\), indent=2\\)\\)\")",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\(json.dumps\\(d.get\\('devDependencies',{}\\), indent=2\\)\\)\")",
+      "Bash(tsc --noEmit)",
+      "Bash(../../node_modules/.bin/tsc --noEmit)",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); pkgs=d.get\\('packages',{}\\); root=pkgs.get\\('',{}\\); print\\('name:', root.get\\('name'\\)\\); print\\('deps:', list\\(root.get\\('dependencies',{}\\).keys\\(\\)\\)[:10]\\); print\\('devDeps:', list\\(root.get\\('devDependencies',{}\\).keys\\(\\)\\)[:10]\\)\")",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\(d['name'], '-', d.get\\('version'\\)\\); print\\(json.dumps\\(d.get\\('scripts',{}\\), indent=2\\)\\)\")",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); deps={**d.get\\('dependencies',{}\\),**d.get\\('devDependencies',{}\\)}; prisma={k:v for k,v in deps.items\\(\\) if 'prisma' in k.lower\\(\\)}; print\\(prisma\\)\")",
+      "Bash(/z/Cursor/visantchi-os/packages/social/node_modules/.bin/prisma --version)",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\('name:', d['name']\\); print\\('version:', d['version']\\); print\\('prepack:', d.get\\('scripts',{}\\).get\\('prepack'\\)\\)\")",
+      "Bash(xargs grep *)",
+      "Bash(npx tsc *)",
+      "Bash(xargs ls *)",
+      "Bash(xargs cat *)",
+      "Bash(npx prisma *)",
+      "Bash(git commit -m ' *)",
+      "Bash(node -e ' *)",
+      "Bash(node Z:/Cursor/visantchi-os/packages/cli/visantchi/scripts/sync-shared.mjs)",
+      "PowerShell(cd \"Z:\\\\Cursor\\\\visantchi-os\" && pwsh fix-dashboard.ps1)",
+      "Bash(npx vitest *)",
+      "Bash(git stash *)",
+      "Bash(node -e \"const m = require\\('../../../node_modules/@visantchi/web/dist/app.js'\\); console.log\\(Object.keys\\(m\\)\\)\")",
+      "Bash(python -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\(json.dumps\\({**d.get\\('dependencies',{}\\), **d.get\\('devDependencies',{}\\)}, indent=2\\)\\)\")",
+      "Skill(gsd:progress)",
+      "PowerShell(Z:\\\\Cursor\\\\visantchi-os\\\\publish-cli.ps1)",
+      "Bash(Get-Content \"C:\\\\Users\\\\Usuario\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\Z--Cursor-visantchi-os\\\\b2c4783a-e31b-451a-a8e1-829e559f58d3\\\\tasks\\\\b8kv2u9ws.output\" -Wait)",
+      "Bash(git -C Z:/Cursor/visantchi-os status)",
+      "Bash(git -C Z:/Cursor/visantchi-os diff HEAD)",
+      "Bash(git *)"
     ]
   }
 }
