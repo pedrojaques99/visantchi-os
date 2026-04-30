@@ -59,7 +59,13 @@
       "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\(json.dumps\\(d.get\\('scripts', {}\\), indent=2\\)\\)\")",
       "Bash(vercel env *)",
       "Bash(vercel link *)",
-      "Bash(neon projects *)"
+      "Bash(neon projects *)",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\(json.dumps\\(d.get\\('dependencies', {}\\), indent=2\\)\\)\")",
+      "Bash(npm search *)",
+      "Bash(npm view *)",
+      "Bash(vercel inspect *)",
+      "Bash(vercel list *)",
+      "Bash(vercel ls *)"
     ]
   }
 }
