@@ -65,7 +65,16 @@
       "Bash(npm view *)",
       "Bash(vercel inspect *)",
       "Bash(vercel list *)",
-      "Bash(vercel ls *)"
+      "Bash(vercel ls *)",
+      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\(json.dumps\\(d[:2] if isinstance\\(d,list\\) else d, indent=2\\)\\)\")",
+      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\(json.dumps\\(d, indent=2\\)\\)\")",
+      "Bash(python3 *)",
+      "Bash(cp /z/Cursor/visantchi-os/packages/cli/visantchi/packages/shared/dist/codex-logs.* /z/Cursor/visantchi-os/packages/cli/visantchi/packages/cli/node_modules/@visantchi/shared/dist/)",
+      "Bash(cp /z/Cursor/visantchi-os/packages/cli/visantchi/packages/shared/dist/hermes-logs.* /z/Cursor/visantchi-os/packages/cli/visantchi/packages/cli/node_modules/@visantchi/shared/dist/)",
+      "Bash(cp /z/Cursor/visantchi-os/packages/cli/visantchi/packages/shared/dist/generic-logs.* /z/Cursor/visantchi-os/packages/cli/visantchi/packages/cli/node_modules/@visantchi/shared/dist/)",
+      "Bash(cp /z/Cursor/visantchi-os/packages/cli/visantchi/packages/shared/dist/index.* /z/Cursor/visantchi-os/packages/cli/visantchi/packages/cli/node_modules/@visantchi/shared/dist/)",
+      "Bash(cp /z/Cursor/visantchi-os/packages/cli/visantchi/packages/shared/dist/types.* /z/Cursor/visantchi-os/packages/cli/visantchi/packages/cli/node_modules/@visantchi/shared/dist/)",
+      "Bash(grep -E \"\\\\.\\(js|css|html\\)$\")"
     ]
   }
 }
